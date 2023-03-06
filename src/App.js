@@ -4,6 +4,7 @@ import { BrowserRouter, Router, Route, Routes } from "react-router-dom";
 import About from "./components/About";
 import NoMatch from "./components/NoMatch";
 import Create from "./components/Create";
+import BlogDetails from "./components/BlogDetails";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/create" element={<Create />} />
+            <Route path="/blogs/:id" element={<BlogDetails />} />
             <Route path="*" element={<NoMatch />} />
           </Routes>
         </div>
