@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import { BrowserRouter, Router, Route, Routes } from "react-router-dom";
 import About from "./components/About";
 import NoMatch from "./components/NoMatch";
+import Create from "./components/Create";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/create" element={<Create />} />
             <Route path="*" element={<NoMatch />} />
           </Routes>
         </div>
